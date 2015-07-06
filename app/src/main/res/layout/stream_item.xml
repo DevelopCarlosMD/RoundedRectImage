@@ -1,6 +1,34 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical" android:layout_width="match_parent"
-    android:layout_height="match_parent">
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
 
-</LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_item"
+        android:layout_width ="wrap_content"
+        android:layout_height ="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="@dimen/margin_space"
+        android:layout_marginLeft="@dimen/margin_space"
+        android:background="#7f000000"
+        android:paddingLeft="@dimen/padding_space"
+        android:paddingRight="@dimen/padding_space"
+        android:textAppearance="?android:attr/textAppearanceMediumInverse"/>
+
+    <TextView
+        android:id="@+id/tv_item2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/tv_item"
+        android:layout_alignLeft="@id/tv_item"
+        android:layout_marginBottom="@dimen/margin_space_short"
+        android:background="#7f000000"
+        android:paddingLeft="@dimen/padding_space"
+        android:paddingRight="@dimen/padding_space"
+        android:textAppearance="?android:attr/textAppearanceLargeInverse"/>
+
+</RelativeLayout>
